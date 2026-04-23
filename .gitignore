@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# env files (VERY important)
+.env
+
+# build output (if you add tsc later)
+dist/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

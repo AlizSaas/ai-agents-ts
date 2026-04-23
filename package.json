@@ -1,0 +1,32 @@
+{
+  "name": "basic-ai-agent-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "setup": "npx tsx src/workflows/setup/index.ts",
+    "chain": "npx tsx src/workflows/prompt-chaining/index.ts",
+    "router-simple": "npx tsx src/workflows/routing/router-simple.ts",
+    "router": "npx tsx src/workflows/routing/router.ts",
+    "voting": "npx tsx src/workflows/parallelization/voting.ts",
+    "sectioning": "npx tsx src/workflows/parallelization/sectioning.ts",
+    "orchestrator":"npx tsx src/workflows/orchestration-workers/orchestrator.ts",
+    "evalution":"npx tsx src/workflows/evalution/evaluation.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.8.3",
+    "dotenv": "^17.4.1",
+    "openai": "^6.34.0",
+    "zod": "^4.3.6"
+  },
+  "type": "module"
+}
