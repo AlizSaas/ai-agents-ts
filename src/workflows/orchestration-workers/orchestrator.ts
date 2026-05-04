@@ -21,9 +21,11 @@ Break this into 3-4 sections. Return ONLY a JSON array of section titles, nothin
 Example: ["Section 1 title", "Section 2 title", "Section 3 title"]`,
 });
 
-const sections = JSON.parse(orchestrator.output_text); // 
+const sections = JSON.parse(orchestrator.output_text);
 console.log("Sections planned:");
-sections.forEach((s: string, i: number) => console.log(`  ${i + 1}. ${s}`));  // Log the planned sections 
+
+console.log(sections);
+sections.forEach((s: string, i: number) => console.log(`  ${i + 1}. ${s}`));
 // Example output: ["Introduction to AI Agents", "Benefits of Learning AI Agents", "How to Get Started with AI Agents", "Future of AI Agents"]
 console.log(`\nSpawning ${sections.length} workers in parallel...\n`);
 
